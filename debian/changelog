@@ -1,0 +1,181 @@
+libpod-spell-perl (1.20-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Rene Mayorga from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/*: replace ADTTMP with AUTOPKGTEST_TMP.
+  * debian/copyright: replace tabs with spaces / remove trailing
+    whitespace.
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * Add libpod-parser-perl to {build,runtime} dependencies.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 17 May 2020 14:36:12 +0200
+
+libpod-spell-perl (1.20-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.20.
+  * Update (build) dependencies.
+  * Declare compliance with Debian Policy 3.9.8.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 29 Apr 2016 16:44:30 +0200
+
+libpod-spell-perl (1.19-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.19.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 25 Feb 2016 22:44:36 +0100
+
+libpod-spell-perl (1.18-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Florian Schlichting ]
+  * Use the installed podspell for autopkgtests instead of the one from the
+    source package
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * Import upstream version 1.18.
+  * Update debian/upstream/metadata.
+  * Update (Upstream-)Contact in debian/{copyright,upstream/metadata}.
+  * Update upstream copyright holders.
+  * Declare compliance with Debian Policy 3.9.7.
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 19 Feb 2016 19:05:09 +0100
+
+libpod-spell-perl (1.17-2) unstable; urgency=medium
+
+  * Also make regular package tests available to autopkgtests, again
+
+ -- Florian Schlichting <fsfs@debian.org>  Sat, 15 Aug 2015 15:30:41 +0200
+
+libpod-spell-perl (1.17-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Florian Schlichting ]
+  * Import upstream version 1.17
+  * Add debian/upstream/metadata
+  * Update copyright years
+  * Make File::ShareDir::Install build-dependency versioned
+  * Declare compliance with Debian Policy 3.9.6
+  * Make bin/podspell available in testbed and mark package autopkgtest-able
+
+ -- Florian Schlichting <fsfs@debian.org>  Sat, 15 Aug 2015 09:30:04 +0200
+
+libpod-spell-perl (1.15-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Florian Schlichting ]
+  * Import Upstream version 1.15
+  * Drop version on libfile-sharedir-install-perl dependency (no older version
+    in the archive)
+
+ -- Florian Schlichting <fsfs@debian.org>  Wed, 05 Mar 2014 22:03:41 +0100
+
+libpod-spell-perl (1.14-1) unstable; urgency=low
+
+  [ Florian Schlichting ]
+  * Import Upstream version 1.13, 1.14
+  * Bump copyright years
+  * Drop (build-)dependency on File::Slurp
+
+  [ gregor herrmann ]
+  * Install CONTRIBUTING file.
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 23 Feb 2014 22:17:58 +0100
+
+libpod-spell-perl (1.12-1) unstable; urgency=low
+
+  [ Rene Mayorga ]
+  * Email change: Rene Mayorga -> rmayorga@debian.org
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Florian Schlichting ]
+  * Import Upstream version 1.10
+  * Convert debian/copyright to machine-readable copyright-format 1.0
+  * Switch to source format 3.0 (quilt)
+  * Brush up short description
+  * Update list of (build-)dependencies
+  * Bump dh compatibility to level 8 (no changes necessary)
+  * Switch to short-form debian/rules
+  * Delete Debian-provided podspell.1 manpage, upstream provides its own now
+
+  [ gregor herrmann ]
+  * New upstream release 1.12.
+
+  [ Florian Schlichting ]
+  * Fix "Continuation line outside a paragraph" error in debian/copyright
+  * Declare compliance with Debian Policy 3.9.5
+  * Add myself to uploaders
+
+ -- Florian Schlichting <fsfs@debian.org>  Sat, 02 Nov 2013 16:52:10 +0100
+
+libpod-spell-perl (1.01-2) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/rules: delete /usr/lib/perl5 only if it exists.
+
+  [ Rene Mayorga ]
+  * Make package ready for perl 5.10 update
+  * debian/control
+    + Raise debhelper version to 6
+    + set standards-version to 3.7.3
+    + Remove a trailling "," from B-D-I
+  * debian/rules
+    + Add install-stamp and made it depends on build-stamp
+    + don't install README, it has the same info from pods
+  * Improve debian/watch
+
+  [ Damyan Ivanov ]
+  * improve a bit short and long description
+  * add myself to Uploaders
+
+ -- Damyan Ivanov <dmn@debian.org>  Fri, 01 Feb 2008 16:16:11 +0200
+
+libpod-spell-perl (1.01-1) unstable; urgency=low
+
+  * Initial release (Closes: #442764)
+
+ -- Rene Mayorga <rmayorga@debian.org.sv>  Mon, 22 Oct 2007 08:30:19 -0600

@@ -1,0 +1,37 @@
+Source: libpod-spell-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>,
+           Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libclass-tiny-perl <!nocheck>,
+                     libfile-sharedir-install-perl,
+                     libfile-sharedir-perl,
+                     liblingua-en-inflect-perl <!nocheck>,
+                     libpath-tiny-perl <!nocheck>,
+                     libpod-parser-perl <!nocheck>,
+                     libtest-deep-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libpod-spell-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libpod-spell-perl.git
+Homepage: https://metacpan.org/release/Pod-Spell
+Rules-Requires-Root: no
+
+Package: libpod-spell-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libclass-tiny-perl,
+         libfile-sharedir-perl,
+         liblingua-en-inflect-perl,
+         libpath-tiny-perl,
+         libpod-parser-perl
+Description: formatter to easily check the spelling of POD
+ Pod::Spell is a POD formatter whose output is good for checking the spelling
+ of the document.  Pod::Spell is much like Pod::Text, except that it doesn't
+ put much effort into actual formatting, and it suppresses things that look
+ like Perl symbols or Perl jargon (so that your spellchecking program won't
+ complain about mystery words like "`$thing'" or "`Foo::Bar'" or "hashref").
